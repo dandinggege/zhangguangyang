@@ -1,0 +1,162 @@
+
+/* Class = "UIBarButtonItem"; title = "提交"; ObjectID = "2Dx-eR-way"; */
+"2Dx-eR-way.title" = "提交";
+
+/* Class = "UITextField"; placeholder = "请输入用户密码"; ObjectID = "2uv-yl-cb8"; */
+"2uv-yl-cb8.placeholder" = "请输入用户密码";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4QC-bs-dh9"; */
+"4QC-bs-dh9.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "5wh-Ir-oeE"; */
+"5wh-Ir-oeE.normalTitle" = "注册";
+
+/* Class = "UINavigationItem"; title = "修改密码"; ObjectID = "7Mq-Rl-Eyr"; */
+"7Mq-Rl-Eyr.title" = "修改密码";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7m8-Dh-a6Y"; */
+"7m8-Dh-a6Y.text" = "Label";
+
+/* Class = "UILabel"; text = "  "; ObjectID = "8Zn-Vp-lzo"; */
+"8Zn-Vp-lzo.text" = "  ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "A6S-2W-WHJ"; */
+"A6S-2W-WHJ.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "提交"; ObjectID = "AaG-6Y-wzz"; */
+"AaG-6Y-wzz.title" = "提交";
+
+/* Class = "UITabBarItem"; title = "关于我"; ObjectID = "Ani-ym-lmX"; */
+"Ani-ym-lmX.title" = "关于我";
+
+/* Class = "UITextField"; placeholder = "确忍密码"; ObjectID = "E9x-aS-6WC"; */
+"E9x-aS-6WC.placeholder" = "确忍密码";
+
+/* Class = "UITextField"; placeholder = "邮箱（<50字符）"; ObjectID = "FDe-lO-8ge"; */
+"FDe-lO-8ge.placeholder" = "邮箱（<50字符）";
+
+/* Class = "UINavigationItem"; title = "关于我"; ObjectID = "Giy-CY-KB1"; */
+"Giy-CY-KB1.title" = "关于我";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "IRj-1x-TDB"; */
+"IRj-1x-TDB.title" = "Item";
+
+/* Class = "UILabel"; text = "邮箱："; ObjectID = "Im4-2F-cpy"; */
+"Im4-2F-cpy.text" = "邮箱：";
+
+/* Class = "UITextField"; placeholder = "新密码"; ObjectID = "JcA-uY-kYR"; */
+"JcA-uY-kYR.placeholder" = "新密码";
+
+/* Class = "UITextField"; placeholder = "请输入用户名"; ObjectID = "KtA-vb-xyN"; */
+"KtA-vb-xyN.placeholder" = "请输入用户名";
+
+/* Class = "UINavigationItem"; title = "论坛"; ObjectID = "MQL-CA-kIu"; */
+"MQL-CA-kIu.title" = "论坛";
+
+/* Class = "UITextField"; placeholder = "请确认用户密码"; ObjectID = "Na6-Cy-vGf"; */
+"Na6-Cy-vGf.placeholder" = "请确认用户密码";
+
+/* Class = "UILabel"; text = "   "; ObjectID = "QtW-sU-CDU"; */
+"QtW-sU-CDU.text" = "   ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "R2N-I1-dCl"; */
+"R2N-I1-dCl.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "返回"; ObjectID = "Rbx-Co-UZO"; */
+"Rbx-Co-UZO.normalTitle" = "返回";
+
+/* Class = "UINavigationItem"; title = "发表帖子"; ObjectID = "SpA-Yh-j7x"; */
+"SpA-Yh-j7x.title" = "发表帖子";
+
+/* Class = "UITextField"; placeholder = "用户名"; ObjectID = "Tfm-9S-gb4"; */
+"Tfm-9S-gb4.placeholder" = "用户名";
+
+/* Class = "UITextField"; placeholder = "年龄（数字）"; ObjectID = "UZd-wJ-jy1"; */
+"UZd-wJ-jy1.placeholder" = "年龄（数字）";
+
+/* Class = "UIBarButtonItem"; title = "回复"; ObjectID = "UkR-9l-SMh"; */
+"UkR-9l-SMh.title" = "回复";
+
+/* Class = "UITabBarItem"; title = "论坛"; ObjectID = "VCa-o4-CtA"; */
+"VCa-o4-CtA.title" = "论坛";
+
+/* Class = "UIBarButtonItem"; title = "发帖"; ObjectID = "aQI-eG-Yya"; */
+"aQI-eG-Yya.title" = "发帖";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aQb-F6-yjl"; */
+"aQb-F6-yjl.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "原始密码"; ObjectID = "agd-Zs-dY6"; */
+"agd-Zs-dY6.placeholder" = "原始密码";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "arR-op-EaB"; */
+"arR-op-EaB.normalTitle" = "注册";
+
+/* Class = "UIBarButtonItem"; title = "编辑资料"; ObjectID = "azx-wf-Ce7"; */
+"azx-wf-Ce7.title" = "编辑资料";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "efK-oc-g3L"; */
+"efK-oc-g3L.text" = "Label";
+
+/* Class = "UILabel"; text = "主题描述，不要超过500字符："; ObjectID = "eiW-JP-u6A"; */
+"eiW-JP-u6A.text" = "主题描述，不要超过500字符：";
+
+/* Class = "UITextField"; placeholder = "密码"; ObjectID = "gkc-KL-oMN"; */
+"gkc-KL-oMN.placeholder" = "密码";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "h4b-py-bE3"; */
+"h4b-py-bE3.text" = "Label";
+
+/* Class = "UILabel"; text = "选择图片(可不选，最多5张)："; ObjectID = "h8C-EY-aRs"; */
+"h8C-EY-aRs.text" = "选择图片(可不选，最多5张)：";
+
+/* Class = "UIButton"; normalTitle = "登陆"; ObjectID = "hwt-lk-gTc"; */
+"hwt-lk-gTc.normalTitle" = "登陆";
+
+/* Class = "UILabel"; text = "年龄："; ObjectID = "jGg-9Y-fhB"; */
+"jGg-9Y-fhB.text" = "年龄：";
+
+/* Class = "UINavigationItem"; title = "完善个人信息"; ObjectID = "jWA-HC-99K"; */
+"jWA-HC-99K.title" = "完善个人信息";
+
+/* Class = "UILabel"; text = "   "; ObjectID = "kYN-J1-0xO"; */
+"kYN-J1-0xO.text" = "   ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kuv-ey-ZwM"; */
+"kuv-ey-ZwM.text" = "Label";
+
+/* Class = "UILabel"; text = "住址："; ObjectID = "lfE-iY-qg7"; */
+"lfE-iY-qg7.text" = "住址：";
+
+/* Class = "UILabel"; text = "   "; ObjectID = "n25-Xz-rsV"; */
+"n25-Xz-rsV.text" = "   ";
+
+/* Class = "UINavigationItem"; title = "主题帖"; ObjectID = "rj1-DJ-K5M"; */
+"rj1-DJ-K5M.title" = "主题帖";
+
+/* Class = "UILabel"; text = "用户："; ObjectID = "rl6-bL-h6P"; */
+"rl6-bL-h6P.text" = "用户：";
+
+/* Class = "UIBarButtonItem"; title = "修改密码"; ObjectID = "rxI-dZ-P14"; */
+"rxI-dZ-P14.title" = "修改密码";
+
+/* Class = "UIButton"; normalTitle = "选择照片"; ObjectID = "s0H-YI-RQk"; */
+"s0H-YI-RQk.normalTitle" = "选择照片";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "syO-cs-kDT"; */
+"syO-cs-kDT.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "用户名"; ObjectID = "ulN-pU-jj4"; */
+"ulN-pU-jj4.placeholder" = "用户名";
+
+/* Class = "UIBarButtonItem"; title = "发表"; ObjectID = "uqh-94-YGg"; */
+"uqh-94-YGg.title" = "发表";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "v5Z-p3-ER8"; */
+"v5Z-p3-ER8.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "住址（<255字符）"; ObjectID = "zRn-Jg-U8a"; */
+"zRn-Jg-U8a.placeholder" = "住址（<255字符）";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zUT-4w-6iL"; */
+"zUT-4w-6iL.text" = "Label";
