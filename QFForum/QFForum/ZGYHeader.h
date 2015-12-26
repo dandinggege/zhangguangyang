@@ -12,7 +12,7 @@
 //上次登录用户信息，用来做NSUserDefaults的key。
 #define ZGY_LAST_LOGIN_USER_INFO (@"ZGY_LAST_LOGIN_USER_INFO")
 
-//拼接字符串
-#define STR_COMBIN(a,b) ([NSString stringWithFormat:@"%@%@",a,b])
+////拼接字符串
+//#define STR_COMBIN(a,b) ([NSString stringWithFormat:@"%@%@",a,b])
 
 #endif /* ZGYHeader_h */

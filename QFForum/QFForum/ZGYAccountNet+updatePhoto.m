@@ -22,7 +22,7 @@
     //指定请求的方式为POST
     [postRequest setHTTPMethod:@"POST"];
     //设置请求体，把参数连接转换为data类型
-    NSData * imageData=UIImageJPEGRepresentation(image, 0.5);
+    NSData * imageData=UIImageJPEGRepresentation(image, 0.1);
     NSLog(@"img:%@",imageData);
     NSString * imageStr=[ZGYBase64Encode base64StrFromData:imageData];
     //时间戳，加密串

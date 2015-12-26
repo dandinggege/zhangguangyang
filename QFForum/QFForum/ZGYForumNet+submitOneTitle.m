@@ -51,7 +51,7 @@
     //拼接图片的字符串
     for (int i=0;i<imgs.count;i++) {
         UIImage * img = imgs[i];
-        NSData * imageData=UIImageJPEGRepresentation(img, 0.5);
+        NSData * imageData=UIImageJPEGRepresentation(img, 0.1);
         NSLog(@"img:%@",imageData);
         NSString * imageStr=[ZGYBase64Encode base64StrFromData:imageData];
         NSString * keyStr=[NSString stringWithFormat:@"img%d",i];
