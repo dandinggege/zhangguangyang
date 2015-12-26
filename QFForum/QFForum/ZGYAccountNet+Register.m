@@ -17,15 +17,12 @@
     //拼接URL
     NSMutableString * URLStr=[[NSMutableString alloc]init];
     [URLStr appendFormat:@"%@%@?",ZGY_DOMAIN_NAME,ZGY_ACCOUNT_REGISTER_PRO];
-    [URLStr appendFormat:@"username=%@",userName];
-    [URLStr appendFormat:@"&password=%@",password];
+    [URLStr appendFormat:@"username=%@",UTF8Encode(userName)];
+    [URLStr appendFormat:@"&password=%@",UTF8Encode(password)];
     [URLStr appendFormat:@"&sign=%@",md5Str];
     [URLStr appendFormat:@"&timeStamp=%@",timeStamp];
-    //url转码
-    NSString * str=[URLStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    NSLog(@"注册url：%@",str);
     //请求
-    NSURLRequest * request=[NSURLRequest requestWithURL:[NSURL URLWithString:str] cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:ZGY_NET_OUT_TIME];
+    NSURLRequest * request=[NSURLRequest requestWithURL:[NSURL URLWithString:URLStr] cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:ZGY_NET_OUT_TIME];
     //同步请求数据
     [ZGYURLConnect accessServerWithRequest:request andHandler:^(NSData *resultData, NSString *resultStr, NSError *error) {
         if (!error) {
