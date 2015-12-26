@@ -149,6 +149,7 @@ UITextFieldDelegate>
         NSString * userId=[ZGYUserManager manager].userId;
         __weak typeof(self) weakSelf=self;
         if (IS_AGE_CHANGE || IS_EMAIL_CHANGE || IS_ADDRESS_CHANGE) {
+            [ZGYUIFactory showShelterView:@"上传中..."];
             //开始上传用户信息
             [ZGYAccountNet updateUserInfoWithUserId:userId Age:newAgeStr Email:newEmailStr address:newAddressStr handle:^(id result, NSError * error) {
                 if (!error) {
@@ -163,17 +164,21 @@ UITextFieldDelegate>
                             //上传头像
                             [weakSelf updatePhoto];
                         }else{
+                            [ZGYUIFactory missShelterView];
                             [ZGYUIFactory showAlertMsg:message by:self];
                         }
                     }else{
+                        [ZGYUIFactory missShelterView];
                         [ZGYUIFactory showAlertMsg:message by:self];
                     }
                 }else{
+                    [ZGYUIFactory missShelterView];
                     [ZGYUIFactory showAlertMsg:@"访问服务器失败" by:self];
                 }
                 
             }];
         }else if(_SELECTED_PHOTO){
+            [ZGYUIFactory missShelterView];
             [self updatePhoto];
         }
     }
@@ -184,6 +189,7 @@ UITextFieldDelegate>
     //用户id
     NSString * userId=[ZGYUserManager manager].userId;
     [ZGYAccountNet postImgWithUid:userId image:self.photoImgV.image handle:^(id result, NSError * error) {
+        [ZGYUIFactory missShelterView];
         if (!error) {
             //判断结果
             NSString * statusStr=result[@"status"];

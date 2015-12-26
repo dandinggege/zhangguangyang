@@ -10,6 +10,8 @@
 
 #import "ZGYFunction.h"
 
+#import "KVNProgress.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,11 +22,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self checkFirstStart];
+    //设置第三方遮挡
+    [self setupCustomKVNProgressUI];
     return YES;
 }
 
+- (void)setupCustomKVNProgressUI
+{
+    // See the documentation of all appearance propoerties
+    [KVNProgress appearance].statusColor = [UIColor whiteColor];
+    [KVNProgress appearance].statusFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f];
+    [KVNProgress appearance].circleStrokeForegroundColor = [UIColor whiteColor];
+    [KVNProgress appearance].circleStrokeBackgroundColor = [UIColor colorWithWhite:1.0f alpha:0.3f];
+    [KVNProgress appearance].circleFillBackgroundColor = [UIColor colorWithWhite:1.0f alpha:0.1f];
+    [KVNProgress appearance].backgroundFillColor = [UIColor colorWithRed:0.173f green:0.263f blue:0.856f alpha:0.3f];
+    [KVNProgress appearance].backgroundTintColor = [UIColor colorWithRed:0.173f green:0.263f blue:0.856f alpha:1.0f];
+    [KVNProgress appearance].successColor = [UIColor whiteColor];
+    [KVNProgress appearance].errorColor = [UIColor whiteColor];
+    [KVNProgress appearance].circleSize = 110.0f;
+    [KVNProgress appearance].lineWidth = 1.0f;
+}
+
 -(void)checkFirstStart{
-    BOOL flaged=[[NSUserDefaults standardUserDefaults]objectForKey:@"firstStartFlag"];
+    BOOL flaged=[[NSUserDefaults standardUserDefaults]boolForKey:@"firstStartFlag"];
     if (!flaged) {
         [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"firstStartFlag"];
         [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"soundEffectOpen"];

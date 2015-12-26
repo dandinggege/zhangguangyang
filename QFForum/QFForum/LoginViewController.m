@@ -100,7 +100,9 @@
     //检查输入是否合法
     if ([TextInputCheck accountCheckWithTF:self.userNameTF byVC:self] &&
         [TextInputCheck passwordCheckWithTF:self.passwordTF byVC:self]) {
+        [ZGYUIFactory showShelterView:@"登录中..."];
         [ZGYAccountNet loginWithUsername:self.userNameTF.text andPassword:self.passwordTF.text handle:^(id result, NSError * error) {
+            [ZGYUIFactory missShelterView];
             if (!error) {
                 //状态
                 NSString * statusStr=result[@"status"];

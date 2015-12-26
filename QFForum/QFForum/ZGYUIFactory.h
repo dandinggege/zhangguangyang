@@ -31,4 +31,16 @@
  */
 +(UILabel *)inputFieldLeftLabelWithTitle:(NSString *)title;
 
+/**
+ *  显示加载遮挡界面
+ *
+ *  @param title 显示标题
+ */
++(void)showShelterView:(NSString *)title;
+
+/**
+ *  移除遮挡界面
+ */
++(void)missShelterView;
+
 @end

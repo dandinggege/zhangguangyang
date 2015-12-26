@@ -10,6 +10,8 @@
 
 #import "MyMusicPlayer.h"
 
+#import "KVNProgress.h"
+
 @implementation ZGYUIFactory
 
 //显示提示框
@@ -46,6 +48,16 @@
     view.alpha=0.3;
     [label addSubview:view];
     return label;
+}
+
++(void)showShelterView:(NSString *)title{
+    [KVNProgress showWithParameters:@{KVNProgressViewParameterStatus: title,
+                                      KVNProgressViewParameterBackgroundType: @(KVNProgressBackgroundTypeSolid),
+                                      KVNProgressViewParameterFullScreen: @(YES)}];
+}
+
++(void)missShelterView{
+    [KVNProgress dismiss];
 }
 
 @end

@@ -104,6 +104,10 @@
 		C4339E101C2E77D1007423B5 /* setting_selected_tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4339E0E1C2E77D1007423B5 /* setting_selected_tabbar@2x.png */; };
 		C4339E111C2E77D1007423B5 /* setting_no_select_tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4339E0F1C2E77D1007423B5 /* setting_no_select_tabbar@2x.png */; };
 		C4339E141C2E7921007423B5 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4339E131C2E7921007423B5 /* SettingTableViewController.m */; };
+		C4339E201C2ECEBE007423B5 /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = C4339E181C2ECEBE007423B5 /* UIImage+KVNEmpty.m */; };
+		C4339E211C2ECEBE007423B5 /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C4339E1A1C2ECEBE007423B5 /* UIImage+KVNImageEffects.m */; };
+		C4339E221C2ECEBE007423B5 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C4339E1D1C2ECEBE007423B5 /* KVNProgress.m */; };
+		C4339E231C2ECEBE007423B5 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4339E1F1C2ECEBE007423B5 /* KVNProgressView.xib */; };
 		C4D1A42A1C23FA0B001A94C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1A4291C23FA0B001A94C3 /* main.m */; };
 		C4D1A42D1C23FA0B001A94C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1A42C1C23FA0B001A94C3 /* AppDelegate.m */; };
 		C4D1A4331C23FA0B001A94C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D1A4311C23FA0B001A94C3 /* Main.storyboard */; };
@@ -306,6 +310,13 @@
 		C4339E0F1C2E77D1007423B5 /* setting_no_select_tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_no_select_tabbar@2x.png"; sourceTree = "<group>"; };
 		C4339E121C2E7921007423B5 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
 		C4339E131C2E7921007423B5 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		C4339E171C2ECEBE007423B5 /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
+		C4339E181C2ECEBE007423B5 /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
+		C4339E191C2ECEBE007423B5 /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		C4339E1A1C2ECEBE007423B5 /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		C4339E1C1C2ECEBE007423B5 /* KVNProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVNProgress.h; sourceTree = "<group>"; };
+		C4339E1D1C2ECEBE007423B5 /* KVNProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVNProgress.m; sourceTree = "<group>"; };
+		C4339E1F1C2ECEBE007423B5 /* KVNProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVNProgressView.xib; sourceTree = "<group>"; };
 		C4D1A4251C23FA0B001A94C3 /* QFForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D1A4291C23FA0B001A94C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4D1A42B1C23FA0B001A94C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -423,6 +434,7 @@
 		C41B4DFE1C26ABC700733923 /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				C4339E151C2ECE8E007423B5 /* KVNProgress */,
 				C41B4E541C26BB3800733923 /* JSONModel */,
 				C41B4E3B1C26BB2C00733923 /* MJRefresh */,
 				C41B4E091C26BB2100733923 /* SDWebImage */,
@@ -662,6 +674,44 @@
 			name = VedioFunction;
 			sourceTree = "<group>";
 		};
+		C4339E151C2ECE8E007423B5 /* KVNProgress */ = {
+			isa = PBXGroup;
+			children = (
+				C4339E161C2ECEBE007423B5 /* Categories */,
+				C4339E1B1C2ECEBE007423B5 /* Classes */,
+				C4339E1E1C2ECEBE007423B5 /* Resources */,
+			);
+			name = KVNProgress;
+			sourceTree = "<group>";
+		};
+		C4339E161C2ECEBE007423B5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C4339E171C2ECEBE007423B5 /* UIImage+KVNEmpty.h */,
+				C4339E181C2ECEBE007423B5 /* UIImage+KVNEmpty.m */,
+				C4339E191C2ECEBE007423B5 /* UIImage+KVNImageEffects.h */,
+				C4339E1A1C2ECEBE007423B5 /* UIImage+KVNImageEffects.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C4339E1B1C2ECEBE007423B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4339E1C1C2ECEBE007423B5 /* KVNProgress.h */,
+				C4339E1D1C2ECEBE007423B5 /* KVNProgress.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C4339E1E1C2ECEBE007423B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4339E1F1C2ECEBE007423B5 /* KVNProgressView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C4D1A41C1C23FA0B001A94C3 = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +949,7 @@
 				C4D1A45D1C23FD96001A94C3 /* slowWind.mp3 in Resources */,
 				C4339E081C2D4068007423B5 /* video_play.png in Resources */,
 				C41B4E9D1C28A31C00733923 /* home_selected_tabbar@2x.png in Resources */,
+				C4339E231C2ECEBE007423B5 /* KVNProgressView.xib in Resources */,
 				C41B4E7B1C26BD2D00733923 /* photo_holdplace.png in Resources */,
 				C41B4EBD1C28E52400733923 /* delete_image_btn_bg.png in Resources */,
 				C41B4E791C26BB3800733923 /* simpleJson.txt in Resources */,
@@ -978,6 +1029,8 @@
 				C41B4E6F1C26BB3800733923 /* JSONModel.m in Sources */,
 				C41B4E741C26BB3800733923 /* JSONAPI.m in Sources */,
 				C41B4EB31C28DA7300733923 /* ZGYForumNet.m in Sources */,
+				C4339E211C2ECEBE007423B5 /* UIImage+KVNImageEffects.m in Sources */,
+				C4339E221C2ECEBE007423B5 /* KVNProgress.m in Sources */,
 				C41B4E311C26BB2100733923 /* SDWebImageDownloaderOperation.m in Sources */,
 				C41B4E751C26BB3800733923 /* JSONHTTPClient.m in Sources */,
 				C41B4E011C26AD7F00733923 /* ZGYAccountNet+userInfo.m in Sources */,
@@ -1012,6 +1065,7 @@
 				C41B4E381C26BB2100733923 /* UIImageView+HighlightedWebCache.m in Sources */,
 				C4D1A4441C23FB83001A94C3 /* LoginViewController.m in Sources */,
 				C40A80BC1C2BE3CD0099C9E8 /* CommentsModel.m in Sources */,
+				C4339E201C2ECEBE007423B5 /* UIImage+KVNEmpty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

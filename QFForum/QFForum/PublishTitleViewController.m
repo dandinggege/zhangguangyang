@@ -75,6 +75,7 @@ UIPopoverPresentationControllerDelegate>
     //回调block
     __weak typeof(self) weakSelf=self;
     NetHandle handle=^(id result, NSError * error) {
+        [ZGYUIFactory missShelterView];
         if (!error) {
             NSString * statusStr=result[@"status"];
             NSString * message=result[@"msg"];
@@ -92,6 +93,7 @@ UIPopoverPresentationControllerDelegate>
     };
     //如果输入合法
     if ([TextInputCheck titleDescryptionCheckWithTF:self.descryptionTV byVC:self]) {
+        [ZGYUIFactory showShelterView:@"发表中..."];
         if (self.IS_PUBLISH_TITLE) {
             //提交主题描述
             [ZGYForumNet submitTitleWithDescryption:self.descryptionTV.text imgs:_imageArray handle:handle];

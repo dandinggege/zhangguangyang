@@ -94,8 +94,11 @@
             [ZGYUIFactory showAlertMsg:@"跟原密码比，没有区别！" by:self];
             return;
         }
+        //
+        [ZGYUIFactory showShelterView:@"修改中..."];
         //执行
         [ZGYAccountNet changePwWithUserName:self.userNameTF.text password:self.oldPasswordTF.text newPw:self.xinPasswordTF.text handle:^(id result, NSError * error) {
+            [ZGYUIFactory missShelterView];
             if(!error){
                 NSString * statusStr=result[@"status"];
                 NSString * message=result[@"msg"];

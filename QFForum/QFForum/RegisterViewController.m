@@ -71,8 +71,10 @@
         [TextInputCheck passwordCheckWithTF:self.passwordTF byVC:self] &&
         [TextInputCheck passwordCheckWithTF:self.surePasswordTF byVC:self  ] &&
         [self.passwordTF.text isEqualToString:self.surePasswordTF.text]) {
+        [ZGYUIFactory showShelterView:@"注册中..."];
         //如果都没有问题，开始注册
         [ZGYAccountNet registerWithUsername:self.usernameTF.text andPassword:self.passwordTF.text handle:^(id result   , NSError * error) {
+            [ZGYUIFactory missShelterView];
             if (!error) {
                 //状态
                 NSString * status=result[@"status"];
