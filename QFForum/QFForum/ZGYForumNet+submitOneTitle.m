@@ -33,8 +33,10 @@
     NSString * userPhoto=@"";
     if ([ZGYUserManager manager].userInfo) {
         userPhoto=[ZGYUserManager manager].userInfo[@"uPhoto"];
-        NSRange range=[userPhoto rangeOfString:@"/" options:NSBackwardsSearch];
-        userPhoto=[userPhoto substringFromIndex:range.location+1];
+        if (userPhoto.length>0) {
+            NSRange range=[userPhoto rangeOfString:@"/" options:NSBackwardsSearch];
+            userPhoto=[userPhoto substringFromIndex:range.location+1];
+        }
     }
     //参数字符串
     NSMutableString * premStr=[[NSMutableString alloc]init];
