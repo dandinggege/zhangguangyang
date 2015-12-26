@@ -84,12 +84,14 @@
 
 #pragma mark - 按钮事件 -
 
-- (IBAction)editBtnClicked:(id)sender {
+- (IBAction)editBtnClicked:(UIBarButtonItem *)sender {
     [[MyMusicPlayer player]playWater0];
     if (self.tableView.editing) {
         self.tableView.editing=NO;
+        sender.title=@"选择";
     }else{
         self.tableView.editing=YES;
+        sender.title=@"退出选择";
     }
 }
 
@@ -98,7 +100,7 @@
     if (self.tableView.editing) {
         [ZGYUIFactory showAlertMsg:@"下载功能还没做" by:self];
     }else{
-        [ZGYUIFactory showAlertMsg:@"请先点击“编辑选择”按钮，选中想要下载的视频。" by:self];
+        [ZGYUIFactory showAlertMsg:@"请先点击“选择”按钮，选中想要下载的视频。" by:self];
     }
 }
 

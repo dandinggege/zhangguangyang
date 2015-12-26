@@ -17,9 +17,28 @@
     AVAudioPlayer * _soundEffectAudioPlayer;
 }
 
+@property (nonatomic) BOOL Need_Play;
+
 @end
 
 @implementation MyMusicPlayer
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
+-(instancetype)init{
+    if (self=[super init]) {
+        //读取是否播放音效
+        [self readNeedPlay];
+        //监听音效设置
+        [[NSNotificationCenter defaultCenter]addObserver:self
+                                                selector:@selector(readNeedPlay)
+                                                    name:@"soundEffectSetChanged"
+                                                  object:nil];
+    }
+    return self;
+}
 
 +(instancetype)player{
     static MyMusicPlayer * _player=nil;
@@ -31,14 +50,23 @@
 }
 
 -(void)playWindBgSound{
+    if (!self.Need_Play) {
+        return;
+    }
     [self playBackgroundSoundWithReSource:@"slowWind" type:@"mp3" loopNum:-1];
 }
 
 -(void)playWater0{
+    if (!self.Need_Play) {
+        return;
+    }
     [self playSoundEffectWithReSource:@"water0" type:@"MP3"];
 }
 
 -(void)playWater1{
+    if (!self.Need_Play) {
+        return;
+    }
     [self playSoundEffectWithReSource:@"water1" type:@"wav"];
 }
 
@@ -91,6 +119,14 @@
 
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     player=nil;
+}
+
+
+#pragma mark - 获取是否播放音乐 -
+
+-(void)readNeedPlay{
+    BOOL need=[[NSUserDefaults standardUserDefaults]boolForKey:@"soundEffectOpen"];
+    self.Need_Play=need;
 }
 
 @end

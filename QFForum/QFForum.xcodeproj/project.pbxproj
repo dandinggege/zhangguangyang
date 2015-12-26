@@ -101,6 +101,9 @@
 		C4339E081C2D4068007423B5 /* video_play.png in Resources */ = {isa = PBXBuildFile; fileRef = C4339E071C2D4068007423B5 /* video_play.png */; };
 		C4339E0B1C2D40C2007423B5 /* OneVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4339E0A1C2D40C2007423B5 /* OneVideoTableViewCell.m */; };
 		C4339E0D1C2D515B007423B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4339E0C1C2D515B007423B5 /* AVFoundation.framework */; };
+		C4339E101C2E77D1007423B5 /* setting_selected_tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4339E0E1C2E77D1007423B5 /* setting_selected_tabbar@2x.png */; };
+		C4339E111C2E77D1007423B5 /* setting_no_select_tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4339E0F1C2E77D1007423B5 /* setting_no_select_tabbar@2x.png */; };
+		C4339E141C2E7921007423B5 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4339E131C2E7921007423B5 /* SettingTableViewController.m */; };
 		C4D1A42A1C23FA0B001A94C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1A4291C23FA0B001A94C3 /* main.m */; };
 		C4D1A42D1C23FA0B001A94C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1A42C1C23FA0B001A94C3 /* AppDelegate.m */; };
 		C4D1A4331C23FA0B001A94C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D1A4311C23FA0B001A94C3 /* Main.storyboard */; };
@@ -299,6 +302,10 @@
 		C4339E091C2D40C2007423B5 /* OneVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneVideoTableViewCell.h; sourceTree = "<group>"; };
 		C4339E0A1C2D40C2007423B5 /* OneVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVideoTableViewCell.m; sourceTree = "<group>"; };
 		C4339E0C1C2D515B007423B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C4339E0E1C2E77D1007423B5 /* setting_selected_tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_selected_tabbar@2x.png"; sourceTree = "<group>"; };
+		C4339E0F1C2E77D1007423B5 /* setting_no_select_tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_no_select_tabbar@2x.png"; sourceTree = "<group>"; };
+		C4339E121C2E7921007423B5 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		C4339E131C2E7921007423B5 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		C4D1A4251C23FA0B001A94C3 /* QFForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D1A4291C23FA0B001A94C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4D1A42B1C23FA0B001A94C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -438,6 +445,8 @@
 				C4339DEC1C2D205C007423B5 /* VedioTableViewController.m */,
 				C4339DFE1C2D3890007423B5 /* VedioListTableViewController.h */,
 				C4339DFF1C2D3890007423B5 /* VedioListTableViewController.m */,
+				C4339E121C2E7921007423B5 /* SettingTableViewController.h */,
+				C4339E131C2E7921007423B5 /* SettingTableViewController.m */,
 			);
 			name = TableViewControllers;
 			sourceTree = "<group>";
@@ -569,6 +578,8 @@
 		C41B4E8B1C27E38F00733923 /* TabbarItemImages */ = {
 			isa = PBXGroup;
 			children = (
+				C4339E0E1C2E77D1007423B5 /* setting_selected_tabbar@2x.png */,
+				C4339E0F1C2E77D1007423B5 /* setting_no_select_tabbar@2x.png */,
 				C4339DE71C2D1E84007423B5 /* move_no_select_tabbar1@2x.png */,
 				C4339DE81C2D1E84007423B5 /* move_selected_tabbar@2x.png */,
 				C41B4E9B1C28A31C00733923 /* home_selected_tabbar@2x.png */,
@@ -882,6 +893,7 @@
 			files = (
 				C4339DE91C2D1E84007423B5 /* move_no_select_tabbar1@2x.png in Resources */,
 				C4D1A45C1C23FD96001A94C3 /* water1.wav in Resources */,
+				C4339E101C2E77D1007423B5 /* setting_selected_tabbar@2x.png in Resources */,
 				C4D1A4531C23FD64001A94C3 /* register_bg.png in Resources */,
 				C41B4E961C27E9DF00733923 /* changePw_bg.jpg in Resources */,
 				C4D1A45D1C23FD96001A94C3 /* slowWind.mp3 in Resources */,
@@ -894,6 +906,7 @@
 				C41B4E9E1C28A31C00733923 /* home_no_select_tabbar@2x.png in Resources */,
 				C4339DDC1C2CE001007423B5 /* Info.strings in Resources */,
 				C4D1A4381C23FA0B001A94C3 /* LaunchScreen.storyboard in Resources */,
+				C4339E111C2E77D1007423B5 /* setting_no_select_tabbar@2x.png in Resources */,
 				C4339DEA1C2D1E84007423B5 /* move_selected_tabbar@2x.png in Resources */,
 				C41B4EAB1C28BDCB00733923 /* add_image_btn_bg.png in Resources */,
 				C41B4EA21C28A97500733923 /* updateUserInfo_bg.jpg in Resources */,
@@ -918,6 +931,7 @@
 				C41B4EA81C28B42E00733923 /* PublishTitleViewController.m in Sources */,
 				C40A809F1C29421F0099C9E8 /* TitlesModel.m in Sources */,
 				C41B4E2F1C26BB2100733923 /* SDWebImageDecoder.m in Sources */,
+				C4339E141C2E7921007423B5 /* SettingTableViewController.m in Sources */,
 				C4D1A42D1C23FA0B001A94C3 /* AppDelegate.m in Sources */,
 				C41B4E2B1C26BB2100733923 /* MKAnnotationView+WebCache.m in Sources */,
 				C40A80A51C2946B50099C9E8 /* TitleTableViewCell.m in Sources */,

@@ -11,9 +11,11 @@
 
 //网络回调block
 typedef void (^NetHandle)(id ,NSError *);
+//utf8转码
+#define UTF8Encode(str) ([str stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]])
 
 //域名的宏
-#define ZGY_DOMAIN_NAME (@"http://192.168.11.126:8080/")
+#define ZGY_DOMAIN_NAME (@"http://192.168.5.102:8080/")
 //超时时间,如果用户请求数据，超过30秒，即可算作超时
 #define ZGY_NET_OUT_TIME 30.0
 

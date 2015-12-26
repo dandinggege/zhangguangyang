@@ -58,7 +58,7 @@
     
     NSLog(@"%@",premStr);
     //设置请求题
-    [postRequest setHTTPBody:[premStr dataUsingEncoding:NSUTF8StringEncoding]];
+    [postRequest setHTTPBody:[UTF8Encode(premStr) dataUsingEncoding:NSUTF8StringEncoding]];
     //格式设置
     [postRequest addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     //连接本次请求

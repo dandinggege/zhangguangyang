@@ -19,7 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self checkFirstStart];
     return YES;
+}
+
+-(void)checkFirstStart{
+    BOOL flaged=[[NSUserDefaults standardUserDefaults]objectForKey:@"firstStartFlag"];
+    if (!flaged) {
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"firstStartFlag"];
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"soundEffectOpen"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
