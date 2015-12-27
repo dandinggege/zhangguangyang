@@ -75,7 +75,7 @@ UITextFieldDelegate>
 #pragma mark - 按钮触发事件 -
 
 //选择照片
-- (IBAction)choosePhotoBtnClicked:(id)sender {
+- (IBAction)choosePhotoBtnClicked:(UIButton *)sender {
     //隐藏键盘
     [[UIApplication sharedApplication].keyWindow endEditing:YES];
     //播放音效
@@ -96,6 +96,8 @@ UITextFieldDelegate>
     [alertC addAction:pictureBtn];
     UIAlertAction * cancelBtn=[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [alertC addAction:cancelBtn];
+    alertC.popoverPresentationController.sourceView=sender;
+    alertC.popoverPresentationController.sourceRect=sender.bounds;
     [self presentViewController:alertC animated:YES completion:nil];
 }
 //提交更改
