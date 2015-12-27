@@ -13,6 +13,8 @@
 +(void)getVedioCategory:(NetHandle)handle{
     NSMutableString * URLStr=[[NSMutableString alloc]init];
     [URLStr appendFormat:@"%@%@",ZGY_DOMAIN_NAME,ZGY_VEDIO_URL];
+    //
+    NSLog(@"url:%@",URLStr);
     //请求
     NSURLRequest * request=[NSURLRequest requestWithURL:[NSURL URLWithString:URLStr]];
     //链接

@@ -20,8 +20,8 @@
     //拼接URL
     NSMutableString * URLStr=[[NSMutableString alloc]init];
     [URLStr appendFormat:@"%@%@?",ZGY_DOMAIN_NAME,ZGY_TITLE_GET_TS];
-    [URLStr appendFormat:@"&pageNum=%ld",pageNum];
-    [URLStr appendFormat:@"&pageCount=%ld",pageCount];
+    [URLStr appendFormat:@"&pageNum=%ld",(long)pageNum];
+    [URLStr appendFormat:@"&pageCount=%ld",(long)pageCount];
     [URLStr appendFormat:@"&sign=%@",md5Str];
     [URLStr appendFormat:@"&timeStamp=%@",timeStamp];
     //url转码

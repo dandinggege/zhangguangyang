@@ -19,6 +19,7 @@
                            handle:(NetHandle)handle{
     //创建一个请求:
     NSString *URLStr=[NSString stringWithFormat:@"%@%@",ZGY_DOMAIN_NAME,ZGY_TITLE_SUBMIT];
+    NSLog(@"post的链接：%@",URLStr);
     NSURL * APOSTURL=[NSURL URLWithString:URLStr];
     //请求头 下
     NSMutableURLRequest *postRequest=[NSMutableURLRequest requestWithURL:APOSTURL];
